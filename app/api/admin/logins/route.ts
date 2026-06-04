@@ -9,6 +9,8 @@ interface Login {
   password: string;
   assigned: boolean;
   assignedTo: string | null;
+  contactName: string;
+  contactEmail: string;
 }
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'logins.json');
@@ -36,6 +38,8 @@ export async function GET() {
         password: login.password,
         assigned: login.assigned,
         assignedTo: login.assignedTo,
+        contactName: login.contactName,
+        contactEmail: login.contactEmail,
       })),
       stats,
     });

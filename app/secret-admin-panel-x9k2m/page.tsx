@@ -9,6 +9,8 @@ interface Login {
   password: string;
   assigned: boolean;
   assignedTo: string | null;
+  contactName: string;
+  contactEmail: string;
 }
 
 interface Stats {
@@ -78,7 +80,9 @@ export default function AdminPage() {
       searchTerm === '' ||
       login.username.toLowerCase().includes(searchTerm.toLowerCase()) ||
       login.assignedTo?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      login.url.toLowerCase().includes(searchTerm.toLowerCase());
+      login.url.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      login.contactName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      login.contactEmail.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesFilter =
       filterAssigned === 'all' ||
@@ -167,6 +171,9 @@ export default function AdminPage() {
                     ID
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Contact (Demo)
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     URL
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -194,6 +201,10 @@ export default function AdminPage() {
                   >
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                       {login.id}
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-900">
+                      <div className="font-medium text-gray-900">{login.contactName}</div>
+                      <div className="text-xs text-gray-500">{login.contactEmail}</div>
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-900">
                       <a

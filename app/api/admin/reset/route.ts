@@ -9,6 +9,8 @@ interface Login {
   password: string;
   assigned: boolean;
   assignedTo: string | null;
+  contactName: string;
+  contactEmail: string;
 }
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'logins.json');

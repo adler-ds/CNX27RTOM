@@ -5,7 +5,9 @@
     "username": "demouser1@rtom-262.com",
     "password": "Abcd@12345",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Contact-003",
+    "contactEmail": "contact003@demo.org"
   },
   {
     "id": 1,
@@ -13,7 +15,9 @@
     "username": "demouser2@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Rachel Smith",
+    "contactEmail": "rsmith14329@sampleforce.com"
   },
   {
     "id": 2,
@@ -21,7 +25,9 @@
     "username": "demouser3@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Contact-002",
+    "contactEmail": "rcardillo@logisticsforce.com"
   },
   {
     "id": 3,
@@ -29,7 +35,9 @@
     "username": "demouser4@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Contact-001",
+    "contactEmail": "llang@solarforce.com"
   },
   {
     "id": 4,
@@ -37,7 +45,9 @@
     "username": "demouser5@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Rahul Gupta",
+    "contactEmail": "rahul.gupta@sampleforce.com"
   },
   {
     "id": 5,
@@ -45,7 +55,9 @@
     "username": "demouser6@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Diksha Ranpuani",
+    "contactEmail": "dranpuani@rally.com"
   },
   {
     "id": 6,
@@ -53,7 +65,9 @@
     "username": "demouser7@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Bob Marley",
+    "contactEmail": "bobm@rally.com"
   },
   {
     "id": 7,
@@ -61,7 +75,9 @@
     "username": "demouser8@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Joe Brady",
+    "contactEmail": "jbrady@gmail.invalid"
   },
   {
     "id": 8,
@@ -69,7 +85,9 @@
     "username": "demouser9@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Jim Clark",
+    "contactEmail": "jimclark@rally.invalid"
   },
   {
     "id": 9,
@@ -77,7 +95,9 @@
     "username": "demouser10@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Nick Fish",
+    "contactEmail": "nfish@tic.invalid"
   },
   {
     "id": 10,
@@ -85,7 +105,9 @@
     "username": "demouser11@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Matty Cook",
+    "contactEmail": "matty@cook.com.invalid"
   },
   {
     "id": 11,
@@ -93,7 +115,9 @@
     "username": "demouser12@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Gerry Speed",
+    "contactEmail": "gerryspeed.com.invalid"
   },
   {
     "id": 12,
@@ -101,7 +125,9 @@
     "username": "demouser13@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Sammy Lee",
+    "contactEmail": "sammy@lee.com.example"
   },
   {
     "id": 13,
@@ -109,7 +135,9 @@
     "username": "demouser14@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "John Adams",
+    "contactEmail": "jadams@demo.net"
   },
   {
     "id": 14,
@@ -117,7 +145,9 @@
     "username": "demouser15@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Gabby Pearson",
+    "contactEmail": "gpearson@sample.com"
   },
   {
     "id": 15,
@@ -125,7 +155,9 @@
     "username": "demouser16@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Chris Konan",
+    "contactEmail": "chris@konan.demo.com"
   },
   {
     "id": 16,
@@ -133,7 +165,9 @@
     "username": "demouser17@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Meg Grant",
+    "contactEmail": "mgrant@rally.sample"
   },
   {
     "id": 17,
@@ -141,7 +175,9 @@
     "username": "demouser18@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Cindy Parker",
+    "contactEmail": "cparker@rally.example"
   },
   {
     "id": 18,
@@ -149,7 +185,9 @@
     "username": "demouser19@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Jesus Villia",
+    "contactEmail": "jvillia@samplecorp.com"
   },
   {
     "id": 19,
@@ -157,7 +195,9 @@
     "username": "demouser20@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "David OO",
+    "contactEmail": "david@nologotech.com"
   },
   {
     "id": 20,
@@ -165,7 +205,9 @@
     "username": "demouser21@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Adam Amiih",
+    "contactEmail": "AA@gpheadwear.com.sample"
   },
   {
     "id": 21,
@@ -173,7 +215,9 @@
     "username": "demouser22@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Adam Smith",
+    "contactEmail": "invalid"
   },
   {
     "id": 22,
@@ -181,7 +225,9 @@
     "username": "demouser23@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "NTO Member",
+    "contactEmail": "ntomember@nto.com"
   },
   {
     "id": 23,
@@ -189,7 +235,9 @@
     "username": "demouser24@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Edward Stamos",
+    "contactEmail": "info@astrostore.com"
   },
   {
     "id": 24,
@@ -197,6 +245,8 @@
     "username": "demouser25@rtom-262.com",
     "password": "Abcde@123456",
     "assigned": false,
-    "assignedTo": null
+    "assignedTo": null,
+    "contactName": "Howard Jones",
+    "contactEmail": "howard@jones.com"
   }
 ]

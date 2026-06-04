@@ -9,6 +9,8 @@ interface Login {
   password: string;
   assigned: boolean;
   assignedTo: string | null;
+  contactName: string;
+  contactEmail: string;
 }
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'logins.json');
@@ -47,6 +49,8 @@ export async function POST(request: NextRequest) {
           url: existingAssignment.url,
           username: existingAssignment.username,
           password: existingAssignment.password,
+          contactName: existingAssignment.contactName,
+          contactEmail: existingAssignment.contactEmail,
         },
         message: 'Returning your existing assignment',
       });
@@ -74,6 +78,8 @@ export async function POST(request: NextRequest) {
         url: availableLogin.url,
         username: availableLogin.username,
         password: availableLogin.password,
+        contactName: availableLogin.contactName,
+        contactEmail: availableLogin.contactEmail,
       },
       message: 'New login assigned successfully',
     });

@@ -6,6 +6,8 @@ interface LoginInfo {
   url: string;
   username: string;
   password: string;
+  contactName: string;
+  contactEmail: string;
 }
 
 export default function Home() {
@@ -98,6 +100,20 @@ export default function Home() {
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Your Login Credentials
               </h2>
+
+              <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-4">
+                <h3 className="text-sm font-semibold text-blue-900 mb-2">
+                  Scott's Demo Site - Contact to Use
+                </h3>
+                <div className="space-y-1">
+                  <div className="text-blue-800 font-medium">
+                    {loginInfo.contactName}
+                  </div>
+                  <div className="text-blue-600 text-sm">
+                    {loginInfo.contactEmail}
+                  </div>
+                </div>
+              </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-600 mb-1">
