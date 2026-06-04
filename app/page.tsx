@@ -157,7 +157,7 @@ export default function Home() {
               <p className="text-purple-800 mb-4 text-sm">
                 Use your credentials below to log into your personal org, then visit Scott's demo site:
               </p>
-              <div className="bg-white rounded-lg p-4 border border-purple-200">
+              <div className="bg-white rounded-lg p-4 border border-purple-200 mb-4">
                 <label className="block text-xs font-semibold text-gray-600 mb-2">
                   Scott's Demo Site
                 </label>
@@ -168,6 +168,56 @@ export default function Home() {
                   className="text-purple-700 hover:text-purple-900 underline font-medium text-sm break-all"
                 >
                   https://promo-ups-org2-4ff2cdd3b3d9.herokuapp.com/
+                </a>
+              </div>
+
+              <div className="bg-white rounded-lg p-4 border border-purple-200">
+                <label className="block text-xs font-semibold text-gray-600 mb-2">
+                  📚 Session Guide
+                </label>
+                <div className="space-y-2">
+                  <a
+                    href="/RTOM-Guide.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-purple-700 hover:text-purple-900 underline font-medium text-sm"
+                  >
+                    View Real Time Offer Management (RTOM) - Merkle Session Guide
+                  </a>
+                  <div className="text-xs text-gray-600">
+                    <a
+                      href="/RTOM-Guide.pdf"
+                      download="RTOM-Merkle-Session-Guide.pdf"
+                      className="text-purple-600 hover:text-purple-800 underline"
+                    >
+                      Download PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-4">
+              <h3 className="text-sm font-semibold text-orange-900 mb-2">
+                📄 Follow Along with the Session Guide
+              </h3>
+              <p className="text-orange-800 text-xs mb-3">
+                The RTOM guide below provides step-by-step instructions for the demo session.
+              </p>
+              <div className="bg-white rounded-lg border border-orange-300 overflow-hidden">
+                <iframe
+                  src="/RTOM-Guide.pdf"
+                  className="w-full h-96 border-0"
+                  title="RTOM Session Guide"
+                />
+              </div>
+              <div className="mt-2 text-center">
+                <a
+                  href="/RTOM-Guide.pdf"
+                  download="RTOM-Merkle-Session-Guide.pdf"
+                  className="inline-flex items-center text-orange-700 hover:text-orange-900 underline font-medium text-sm"
+                >
+                  ⬇️ Download PDF Guide
                 </a>
               </div>
             </div>
