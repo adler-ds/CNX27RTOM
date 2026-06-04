@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.production
+
+# Keep data directory structure but not runtime state
+# data/logins.json should be committed for initial deploy
 
 # vercel
 .vercel
