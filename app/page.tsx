@@ -49,13 +49,65 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+      <div className="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full">
         <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-          Login Assignment Portal
+          Scott's Personalized Demo Experience
         </h1>
 
         {!loginInfo ? (
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <>
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300 rounded-lg p-6 mb-6">
+              <h2 className="text-xl font-bold text-green-900 mb-4 flex items-center">
+                <span className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg font-bold">1</span>
+                Step 1: View the Read-Only Demo
+              </h2>
+              <p className="text-green-800 mb-4 text-sm">
+                First, log into the read-only site to see Scott's personalized experience:
+              </p>
+              <div className="bg-white rounded-lg p-4 space-y-3 border border-green-200">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-600 mb-1">
+                    URL
+                  </label>
+                  <a
+                    href="https://login.salesforce.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 hover:text-green-900 underline font-mono text-sm break-all"
+                  >
+                    login.salesforce.com
+                  </a>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-gray-600 mb-1">
+                    Username
+                  </label>
+                  <div className="bg-gray-50 px-3 py-2 rounded border border-gray-200 font-mono text-sm">
+                    promoupsdemo2@example.com
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-gray-600 mb-1">
+                    Password
+                  </label>
+                  <div className="bg-gray-50 px-3 py-2 rounded border border-gray-200 font-mono text-sm">
+                    Abcd@1234
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-lg p-6 mb-6">
+              <h2 className="text-xl font-bold text-blue-900 mb-4 flex items-center">
+                <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg font-bold">2</span>
+                Step 2: Get Your Own Interactive Org
+              </h2>
+              <p className="text-blue-800 mb-4 text-sm">
+                Request your personal credentials to create offers and experience a personalized demo:
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
                 htmlFor="email"
@@ -83,11 +135,12 @@ export default function Home() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+              className="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors font-semibold"
             >
-              {loading ? 'Processing...' : 'Get Login Credentials'}
+              {loading ? 'Processing...' : 'Get My Personal Org Credentials'}
             </button>
           </form>
+          </>
         ) : (
           <div className="space-y-4">
             {message && (
@@ -96,9 +149,32 @@ export default function Home() {
               </div>
             )}
 
+            <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6 mb-4">
+              <h2 className="text-xl font-bold text-purple-900 mb-3 flex items-center">
+                <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg font-bold">3</span>
+                Step 3: Experience Your Personalized Demo
+              </h2>
+              <p className="text-purple-800 mb-4 text-sm">
+                Use your credentials below to log into your personal org, then visit Scott's demo site:
+              </p>
+              <div className="bg-white rounded-lg p-4 border border-purple-200">
+                <label className="block text-xs font-semibold text-gray-600 mb-2">
+                  Scott's Demo Site
+                </label>
+                <a
+                  href="https://promo-ups-org2-4ff2cdd3b3d9.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline font-medium text-sm break-all"
+                >
+                  https://promo-ups-org2-4ff2cdd3b3d9.herokuapp.com/
+                </a>
+              </div>
+            </div>
+
             <div className="bg-gray-50 p-6 rounded-lg space-y-4">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Your Login Credentials
+                Your Personal Org Credentials
               </h2>
 
               {loginInfo.contactName && (
