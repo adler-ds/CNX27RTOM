@@ -101,19 +101,32 @@ export default function Home() {
                 Your Login Credentials
               </h2>
 
-              <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-4">
-                <h3 className="text-sm font-semibold text-blue-900 mb-2">
-                  Scott's Demo Site - Contact to Use
-                </h3>
-                <div className="space-y-1">
-                  <div className="text-blue-800 font-medium">
-                    {loginInfo.contactName}
-                  </div>
-                  <div className="text-blue-600 text-sm">
-                    {loginInfo.contactEmail}
+              {loginInfo.contactName && (
+                <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-4">
+                  <h3 className="text-sm font-semibold text-blue-900 mb-2">
+                    Scott's Demo Site - Contact to Use
+                  </h3>
+                  <div className="space-y-1">
+                    <div className="text-blue-800 font-medium">
+                      {loginInfo.contactName}
+                    </div>
+                    <div className="text-blue-600 text-sm">
+                      {loginInfo.contactEmail}
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
+
+              {!loginInfo.contactName && (
+                <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-4">
+                  <h3 className="text-sm font-semibold text-yellow-900 mb-1">
+                    No specific contact assigned
+                  </h3>
+                  <p className="text-yellow-700 text-xs">
+                    You can use any contact for this demo login
+                  </p>
+                </div>
+              )}
 
               <div>
                 <label className="block text-sm font-medium text-gray-600 mb-1">
